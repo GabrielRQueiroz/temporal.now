@@ -10,7 +10,7 @@ This tiny project is just a way I found of practicing and understandind this new
 
 ## Getting Started
 
-Just [click me](https://link) to get to the Github Page of this repositories
+Just [click me](https://gabrielrqueiroz.github.io/temporal.now/) to get to the Github Page of this repositories
 
 End with an example of getting some data out of the system or using it for a little demo.
 
