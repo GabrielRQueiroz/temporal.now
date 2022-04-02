@@ -10,6 +10,6 @@ This tiny project is just a way I found of practicing and understandind this new
 
 ## Take a look at it! 👀
 
-Just [click me](https://gabrielrqueiroz.github.io/temporal.now/) to get to the Github Page of this repositories
+Just [click me](https://temporal-now.netlify.app) to get to the Github Page of this repositories
 
 <img src="./animated-preview.gif" />
