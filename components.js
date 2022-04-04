@@ -21,3 +21,5 @@ export const zonedTimeISOOffsetContainer = document.querySelector('#zoned-time-i
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 export const zonedTimeISORoundedContainer = document.querySelector('#zoned-time-iso-rounded');
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+export const plainDateTimeOtherDayContainer = document.querySelector('#plain-date-time-other-day')
+// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

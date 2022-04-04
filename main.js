@@ -1,16 +1,17 @@
 import { Temporal } from '@js-temporal/polyfill';
 import {
-  mainButton,
-  plainDateISOContainer,
-  plainTimeISOContainer,
-  plainTimeISORoundedContainer,
-  zonedTimeISOContainer,
-  zonedTimeISODayContainer,
-  zonedTimeISODayOfWeekContainer,
-  zonedTimeISODaysInMonthContainer,
-  zonedTimeISOMonthContainer,
-  zonedTimeISOOffsetContainer,
-  zonedTimeISORoundedContainer
+	mainButton,
+	plainDateISOContainer,
+	plainDateTimeOtherDayContainer,
+	plainTimeISOContainer,
+	plainTimeISORoundedContainer,
+	zonedTimeISOContainer,
+	zonedTimeISODayContainer,
+	zonedTimeISODayOfWeekContainer,
+	zonedTimeISODaysInMonthContainer,
+	zonedTimeISOMonthContainer,
+	zonedTimeISOOffsetContainer,
+	zonedTimeISORoundedContainer,
 } from './components';
 
 const plainDateISO = Temporal.Now.plainDateISO();
@@ -23,6 +24,7 @@ const zonedDateTimeISODaysInMonth = Temporal.Now.zonedDateTimeISO().daysInMonth;
 const zonedDateTimeISODayOfWeek = Temporal.Now.zonedDateTimeISO().dayOfWeek;
 const zonedDateTimeISOOffset = Temporal.Now.zonedDateTimeISO().offset;
 const zonedDateTimeISORounded = Temporal.Now.zonedDateTimeISO().round('seconds');
+const plainDateTimeOtherDay = Temporal.PlainDate.from({ year: 2022, month: 1, day: 1 }).toString();
 
 function renderEverything() {
 	plainDateISOContainer.innerHTML = `> ${plainDateISO}`;
@@ -35,6 +37,7 @@ function renderEverything() {
 	zonedTimeISODayOfWeekContainer.innerHTML = `> ${zonedDateTimeISODayOfWeek}`;
 	zonedTimeISOOffsetContainer.innerHTML = `> ${zonedDateTimeISOOffset}`;
 	zonedTimeISORoundedContainer.innerHTML = `> ${zonedDateTimeISORounded}`;
+	plainDateTimeOtherDayContainer.innerHTML = `> ${plainDateTimeOtherDay}`;
 }
 
 mainButton.addEventListener('click', renderEverything);

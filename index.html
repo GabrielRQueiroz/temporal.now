@@ -15,11 +15,10 @@
 	</head>
 	<body>
 		<main
-			class="bg-dark text-light d-flex flex-column gap-5 justify-content-start align-items-center min-vh-100 w-100 py-5 overflow-hidden"
+			class="bg-dark text-light d-flex flex-column gap-5 justify-content-start align-items-center min-vh-100 w-100 py-5 overflow-auto"
 			id="main"
 		>
 			<div class="d-flex flex-column align-items-center gap-3">
-				<h1 class="fw-bolder display-2 text-warning">Temporal.Now</h1>
 				<button id="main-button" type="button" class="btn btn-outline-warning d-flex align-items-center gap-2">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewbox="0 0 16 16">
 						<path
@@ -33,7 +32,9 @@
 				</button>
 			</div>
 
-			<article class="row text-start w-100 px-sm-5 px-3 overflow-auto">
+			<h1 class="fw-bolder display-3 text-warning">Temporal.Now</h1>
+
+			<article class="row text-start w-100 px-sm-5 px-3">
 				<div class="d-flex flex-column mb-4 col-lg-6 col-12">
 					<h2 class="fs-3 fw-normal text-warning text-opacity-75">.plainDateISO()</h2>
 					<p class="fs-5" id="plain-date-iso">Click the yellow button above :)</p>
@@ -82,6 +83,15 @@
 				<div class="d-flex flex-column mb-4">
 					<h2 class="fs-3 fw-normal text-warning text-opacity-75">.zonedDateTimeISO().round('seconds')</h2>
 					<p class="fs-5" id="zoned-time-iso-rounded">Ok. Sorry if I bothered. Bye.</p>
+				</div>
+			</article>
+
+			<h1 class="fw-bolder display-3 text-warning">Temporal.PLainDate</h1>
+
+			<article class="row text-start w-100 px-sm-5 px-3 overflow-auto">
+				<div class="d-flex flex-column mb-4">
+					<h2 class="fs-3 fw-normal text-warning text-opacity-75">.from({ year: 2022, month: 1, day: 1 })</h2>
+					<p class="fs-5" id="plain-date-time-other-day">You still there?</p>
 				</div>
 			</article>
 		</main>
