@@ -2,6 +2,10 @@
 
 <img src="./preview.PNG" />
 
+## Extra note!
+
+Now Temporal.Now also includes a tiny cheatsheet for Temporal.PlainDateTime!
+
 ## About
 
 This is a kind of a simple and a sketchy "cheatsheet" for some basic Temporal API useful functionalities.
